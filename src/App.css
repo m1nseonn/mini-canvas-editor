@@ -1,0 +1,119 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #f3f4f6;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #111827;
+}
+
+button {
+  cursor: pointer;
+}
+
+button:disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+.app {
+  min-height: 100vh;
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 40px;
+}
+
+.panel {
+  width: 320px;
+  padding: 24px;
+  background: white;
+  color: #111827;
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(15, 23, 42, 0.08);
+}
+
+.panel h1 {
+  margin: 0 0 8px;
+  font-size: 24px;
+  color: #111827;
+}
+
+.description {
+  margin: 0 0 24px;
+  color: #6b7280;
+  line-height: 1.5;
+}
+
+.toolbar {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+
+.toolbar button {
+  padding: 10px 12px;
+  border: none;
+  border-radius: 8px;
+  background: #111827;
+  color: white;
+  font-weight: 600;
+}
+
+.colorRow {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+
+.colorButton {
+  width: 28px;
+  height: 28px;
+  border: 2px solid white;
+  border-radius: 50%;
+  box-shadow: 0 0 0 1px #d1d5db;
+}
+
+.infoBox {
+  padding: 16px;
+  background: #f9fafb;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.infoBox p {
+  margin: 4px 0;
+}
+
+.canvas {
+  position: relative;
+  width: 800px;
+  height: 500px;
+  background: white;
+  border: 2px dashed #cbd5e1;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 8px 24px rgba(15, 23, 42, 0.08);
+}
+
+.shape {
+  position: absolute;
+  border-radius: 8px;
+  user-select: none;
+  cursor: grab;
+}
+
+.shape:active {
+  cursor: grabbing;
+}
+
+.selectedShape {
+  outline: 3px solid #2563eb;
+  outline-offset: 3px;
+}
