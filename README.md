@@ -1,6 +1,6 @@
 # Mini Canvas Editor
 
-React와 TypeScript를 활용해 구현한 간단한 캔버스 편집기입니다.
+React와 TypeScript를 활용해 구현한 간단한 캔버스 편집기
 
 ## 주요 기능
 
